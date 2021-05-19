@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: #3c4043;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.faq{
+    margin-bottom: 70px;
+    line-height: 1.8rem;
+}
+
+.faq h2{
+    margin-bottom: 30px;
+}
