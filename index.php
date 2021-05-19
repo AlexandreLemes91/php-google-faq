@@ -7,6 +7,8 @@
     <title>Google FAQ</title>
     <!-- STYLE -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- FONTAWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -30,7 +32,32 @@
         ],
     ];
 
+    $navLinks = ['Introduzione', 'Norme sulla privacy', 'Termini di servizio', 'Tecnologie', 'Domande frequenti']
+
     ?>
+
+    <header>
+        <div class="top-header">
+
+            <div class="left">
+                <img src="./img/Google-Logo.png" alt=""> 
+                <a href="/">Privacy e termini</a>
+            </div>
+
+            <div class="right">
+                <a href=""><i class="fas fa-ellipsis-h"></i></a>
+                <div class="user"><a href="/">B</a></div>
+            </div>
+        </div>
+
+        <div class="bot-header">
+            <ul>
+            <?php foreach($navLinks as $link) { ?>
+                <li><a href="/"><?php echo $link ?></a></li>
+                <?php } ?>
+            </ul>
+        </div>
+    </header>
     <div class="container">
         <?php foreach($faqs as $item) { ?>
         <div class="faq">

@@ -9,9 +9,86 @@ body{
     color: #3c4043;
 }
 
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+/* HEADER ****************************************************/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px 0;
+    border-bottom: 1px solid #73767b;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* LEFT TOP */
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.top-header img{
+    max-width: 75px;
+}
+
+header a{
+    text-decoration: none;
+    color: #73767b;
+}
+
+.top-header .left a{
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+/* RIGHT TOP */
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.user a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    font-weight: 700;
+    background-color: rgb(223, 57, 159);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: rgb(245, 239, 239);
+
+}
+
+/* BOTTOM */
+.bot-header{
+    padding: 10px 0;
+}
+
+.bot-header li{
+    margin-right: 40px;
+}
+
+
+/* CONTENT ****************************************************/
 .container{
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 200px 15px 0;
     margin: 0 auto;
 }
 
